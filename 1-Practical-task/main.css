@@ -1,0 +1,25 @@
+body {
+  font-size: 16px;
+  
+}
+
+.wrapp {
+  width: 75%;
+  padding: 10px;
+}
+
+.wrapp--code {
+  width: 100%;
+  background-color:rgb(204, 204, 204);
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.code {
+  border: 2px solid rgb(77, 77, 77);
+  border-left: transparent;
+  border-right: transparent;
+}
