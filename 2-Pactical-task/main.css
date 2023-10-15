@@ -1,0 +1,127 @@
+body {
+  background-color: #aaacdb;
+}
+
+.wrapp {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.wrapp-facts {
+  flex-direction: column;
+}
+
+.wrapp-animal {
+  flex-direction: column;
+  padding: 30px;
+}
+
+.title {
+  color: #27313b;
+}
+
+.img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #626487;
+}
+
+.link {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #384656;
+}
+
+.link:hover {
+  color: #27313b;
+  text-shadow: 0 0 5px #7895b6;
+}
+
+.animal-link {
+  color: #45538a;
+  font-size: 20px;
+}
+
+.animal-link:hover {
+  color: #323c64;
+  text-shadow: 0 0 5px #7895b6;
+}
+
+.fact {
+  display: block;
+}
+
+.fact-item {
+  width: 60%;
+}
+
+.fact-text {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #303529;
+}
+
+/* .fact-text:nth-child() */
+
+.fact-item:nth-child(even) > img {
+  margin-left: 30px;
+}
+.fact-item:nth-child(even) > p {
+  text-align: right;
+}
+
+.fact-item:nth-child(odd) > img{
+  margin-right: 30px;
+}
+
+.task2 {
+  color: #303529;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+
+table {
+  border: 2px solid #1c1f18;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  border: 2px solid #1c1f18;
+}
+
+td {
+  border: 2px solid #1c1f18;
+}
+
+
+
+.animal-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.animal-inf {
+  display: flex;
+  gap: 40px;
+}
+
+.animal-title {
+  color: #27313b;
+}
+
+.animal-text {
+  color: #384656;
+  font-size: 25px;
+}
