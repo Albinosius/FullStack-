@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Таблицы</title>
+  <style>
+    a {
+      text-decoration: none;
+      color: black;
+      position: relative;
+    }
+
+    a:hover {
+      color: brown;
+      text-decoration: underline;
+    }
+
+    a::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body style="font-size: 24px;">
+  
+  <section style="margin: 0 40px;">
+    <h2 class="head" style="text-align: center;">1 Задание</h2>
+    <table class="table" border="1" width="100%">
+      <colgroup>
+        <col span="1" style="background-color: #97b3d3;">
+        <col span="1" style="background-color: #fff;">
+        <col span="1" style="background-color: #fff;">
+        <col span="1" style="background-color: #97b3d3;">
+      </colgroup>
+      <tr>
+        <th colspan="4" style="background-color: #fff;">
+          Салаты
+        </th>
+      </tr>
+      <tr>
+        <th>N</th>
+        <th>название</th>
+        <th>порция</th>
+        <th>цена</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Греческий</td>
+        <td>300 г</td>
+        <td>150 р.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Оливье</td>
+        <td>250 г</td>
+        <td>100 р.</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Цезарь</td>
+        <td>250 г</td>
+        <td>200 р.</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Охотничий</td>
+        <td>300 г</td>
+        <td>150 р.</td>
+      </tr>
+      <tr>
+        <th colspan="4" style="background-color: #fff;">
+          Горячие блюда
+        </th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Пельмени с говядиной</td>
+        <td>250 г</td>
+        <td>120 р.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Курица гриль</td>
+        <td>200 г</td>
+        <td>180 р.</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Мясо по-французски</td>
+        <td>250 г</td>
+        <td>200 р.</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Макороны по-флотски</td>
+        <td>300 г.</td>
+        <td>150 р.</td>
+      </tr>
+      <tr>
+        <th colspan="4" style="background-color: #fff;">
+          Напитки
+        </th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Компот</td>
+        <td>100 мл</td>
+        <td>100 р.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Сок</td>
+        <td>100 мл</td>
+        <td>150 р.</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Кофе</td>
+        <td>100 мл</td>
+        <td>200 р.</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Чай</td>
+        <td>100 мл</td>
+        <td>100 р.</td>
+      </tr>
+    </table>
+  </section>
+
+  <section style="margin: 0 40px;">
+    <h2 style="text-align: center;">2 Задание</h2>
+
+    <h3>Содержание</h3>
+    <ul>
+      <a href="учебник.html#1">Принципы построения составных сетей
+        <ul>
+          <a href="учебник.html#2">Локализация трафика и изоляция сетей</a><br>
+          <a href="учебник.html#3">Согласование протоколов канального уровня</a><br>
+          <a href="учебник.html#4">Маршрутизация в сетях с произвольной топологией</a><br>
+          <a href="учебник.html#5">Сетевой уровень и модель OSI</a><br>
+          <a href="учебник.html#6">Функции сетевого уровня</a><br>
+          <a href="учебник.html#7">Протоколы передачи данных и протоколы обмена маршрутной информацией</a><br>
+          <a href="учебник.html#8">История и перспективы стека TCP/IP</a><br>
+          <a href="учебник.html#9">Структура стека TCP/IP. Краткая характеристика протоколов</a><br>
+        </ul>
+      </a>
+      <a href="учебник.html#11">Адресация в IP-сетях
+        <ul>
+          <a href="учебник.html#22">Типы адресов: физический (MAC-адрес), сетевой (IP-адрес) и символьный (DNS-имя)</a><br>
+          <a href="учебник.html#33">Три основных класса IP-адресов</a><br>
+          <a href="учебник.html#44">Соглашения о специальных адресах: broadcast, multicast, loopback</a><br>
+          <a href="учебник.html#55">Отображение физических адресов на IP-адреса: протоколы ARP и RARP</a><br>
+          <a href="учебник.html#66">Отображение символьных адресов на IP-адреса: служба DNS</a><br>
+          <a href="учебник.html#77">Автоматизация процесса назначения IP-адресов узлам сети - протокол DHCP</a><br>
+        </ul>
+      </a>
+    </ul>
+    
+  </section>
+</body>
+
+</html>
