@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  color: rgb(0, 78, 0);
+}
+
+.main {
+  margin: 0 40px;
+}
+
+.section {
+  /* width: 100%; */
+  border: 1px solid rgb(0, 78, 0);
+  border-radius: 10px;
+  padding: 0 40px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-weight: 600;
+}
+
+#ks,
+#di,
+#el,
+#lia,
+#ve {
+  color: #B83B5E;
+}
+
+#ai,
+#lil,
+#sn,
+#az,
+#i {
+  color: #6A2C70;
+}
+
+.arial {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.courier {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  text-align: justify;
+}
+
+.verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+}
+
+.georgia {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.title-main {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  width: 100%;
+  color: black;
+  font-weight: 600;
+}
+
+.title-link:hover {
+  opacity: 0.6;
+}
+
+.title {
+  text-wrap: nowrap;
+  text-decoration: underline;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0px #fff, 2px 2px 0px #444;
+  text-align: center;
+}
+
+.subtitle {
+  color: #444;
+  text-align: center;
+  text-transform: lowercase;
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+
+.text {
+  color: #444;
+  text-indent: 27px;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+.text::first-letter {
+  font-size: 28px;
+}
+
+.text:last-child {
+  padding: 0;
+}
+
+.bottom {
+  position: relative;
+  color: #000;
+}
+
+.bottom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  width: 150px;
+  height: 1px;
+  border-top: 1px solid #000;
+}
+
+.bottoms:last-child {
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.links > a {
+  color: #6A2C70;
+}
+
+a[href*="my-site.ru"] {
+  color: #B83B5E;
+}
+
+.hov {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hov__link {
+  text-decoration: none;
+  color: blue;
+}
+
+.hov__link:hover {
+  color: rgb(230, 54, 83);
+}
+
+.hov__link:active {
+  color: green;
+}
+
+.hov__link:visited {
+  color: orangered;
+}
+
+.hov__pseudolink {
+  text-decoration: none;
+  color: black;
+}
+
+.hov__pseudolink:hover {
+  opacity: 0.6;
+}
+
+.down {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.down__link {
+  text-decoration: none;
+  color: blue;
+  position: relative;
+}
+
+a[download*=".rar"]::before {
+  content: "↓";
+  position: absolute;
+  left: 120px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.yandex__title::first-letter {
+  color: red;
+}
+
+.yandex__text {
+  color: black;
+}
+
+.yandex__text::first-line {
+  color: blue;
+}
