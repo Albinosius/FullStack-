@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    width: 1400px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    /* line-height: 1.1; */
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* dth[eirf */
+
+header {
+    padding: 37px 110px;
+    background-color: white;
+    /* text-align: center; */
+    padding-bottom: 47px;
+    margin: 0;
+}
+
+.wrapper-header {
+    background-image: url(back.png);
+    background-size: cover;
+    margin-bottom: 116px;
+}
+
+.header__logo {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.header__list {
+    display: inline-block;
+    margin: 0;
+    padding-left: 338px;
+}
+
+.header__item {
+    text-decoration: none;
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-right: 31px;
+}
+
+.header__item:last-child {
+    margin: 0;
+}
+
+.header__pic {
+    width: 20px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.header__svg {
+    width: 100%;
+}
+
+/* main */
+
+.main {
+    padding: 165px 110px 52px;
+    text-align: center;
+}
+
+
+
+.main__title {
+    color: white;
+    font-size: 59px;
+    letter-spacing: 4.5px;
+    margin-bottom: 16px;
+}
+
+.main__subtitle {
+    color: white;
+    letter-spacing: 1.7px;
+    font-size: 21px;
+    margin-bottom: 108px;
+}
+
+.btn {
+    width: 220px;
+    height: 72px;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 25px;
+    background: transparent;
+    border: 4px solid white;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn-blue {
+    background-color: #00887A;
+    border-color: #00887A;
+}
+
+.btn:last-child {
+    margin-right: 0;
+}
+
+.main__btns {
+    margin-bottom: 82px;
+}
+
+.main__down {
+    width: 45px;
+    margin: auto;
+    text-align: center;
+}
+
+.main__svg {
+    width: 100%
+}
+
+/* ggjg */
+
+.about {
+    text-align: center;
+}
+
+.about__title {
+    letter-spacing: 2.5px;
+    margin-bottom: 22px;
+}
+
+.about__subtitle {
+    font-size: 16px;
+    padding: 0 385px;
+    margin-bottom: 96px;
+}
+
+/* .about__list {
+    margin: 0;
+} */
+
+.about__item {
+    display: inline-block;
+    width: 260px;
+    margin-right: 136px;
+}
+
+.about__item:last-child {
+    margin-right: 0;
+}
+
+.about__item-pic {
+    margin-bottom: 22px;
+}
+
+.about__item-pic>img {
+    width: 70px;
+}
+
+.about__item-title {
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.about__item-text {
+    font-size: 16px;
+}
