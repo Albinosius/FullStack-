@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+
+@font-face {
+    font-family: "Histora Beralin";
+    src: url(./histora-beralin/Histora\ Beralin.otf);
+}
+
+body,
+ul,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1440px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(back.png);
+    background-size: cover;
+    z-index: -2;
+}
+
+.header {
+    position: relative;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: 0 5%;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.header__logo {
+    /* z-index: 1; */
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu__list {
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu__list {
+        gap: 10px;
+    }
+}
+
+
+.menu__item {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: 0 2px 5px #3F4C8B;
+}
+
+@media screen and (max-width: 768px) {
+    .menu__item {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu__item {
+        font-size: 12px;
+    }
+}
+
+.menu__item--active {
+    color: #FFDB60;
+    text-shadow: 0 2px #fff;
+}
+
+.main {
+    padding: 15% 50% 15% 5%;
+    position: relative;
+}
+
+.main__title {
+    font-family: "Histora Beralin";
+    color: #fff;
+    font-size: 96px;
+    letter-spacing: 10px;
+    line-height: 0.9;
+    text-shadow: 0 2px 5px #3F4C8B;
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .main__title {
+        font-size: 64px;
+        letter-spacing: 7px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main__title {
+        font-size: 32px;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+.main__subtitle {
+    font-size: 30px;
+    color: #271908;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .main__subtitle {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main__subtitle {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    padding: 20px 40px;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border-radius: 50px;
+    background-color: #271908;
+}
+
+@media screen and (max-width: 768px) {
+    .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+.van {
+    width: 276px;
+    position: absolute;
+    top: 40%;
+    left: 67%;
+}
+
+@media screen and (max-width: 1040px) {
+    .van {
+        width: 250px;
+        top: 50%;
+        left: 65%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .van {
+        width: 160px;
+        top: 51%;
+        left: 62%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .van {
+        width: 100px;
+        top: 45%;
+    }
+}
+
+.vaza {
+    width: 222px;
+    position: absolute;
+    top: 57%;
+    left: 54%;
+}
+
+@media screen and (max-width: 1040px) {
+    .vaza {
+        width: 200px;
+        top: 62%;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vaza {
+        width: 140px;
+        top: 61%;
+        left: 44%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .vaza {
+        display: none;
+    }
+}
+
+.circle {
+    width: 191px;
+    position: absolute;
+    top: 70%;
+    left: 33%;
+}
+
+@media screen and (max-width: 1040px) {
+    .circle {
+        display: none;
+    }
+}
+
+/* @media screen and (max-width: 480px) {
+    .circle {
+        display: none;
+    }
+} */
+
+.click {
+    position: absolute;
+    width: 200px;
+    top: 39%;
+    left: 56%;
+}
+
+@media screen and (max-width: 1040px) {
+    .click {
+        width: 180px;
+        top: 51%;
+        left: 52%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .click {
+        width: 160px;
+        top: 48%;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .click {
+        width: 100px;
+        top: 38%;
+        left: 53%;
+    }
+}
+
+.click-img {
+    width: 100%;
+}
+
+.click-text {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1040px) {
+    .click-text {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .click-text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .click-text {
+        font-size: 12px;
+    }
+}
