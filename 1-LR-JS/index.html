@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS1</title>
+  <!-- <link rel="stylesheet" href="main.css"> -->
+</head>
+
+<body>
+
+  <button id="day">Задание 1</button>
+  <button id="arithmetic">Задание 2</button>
+
+  <div>
+    <h1>Факториал числа</h1>
+    <label for="number">Введите число:</label>
+    <input type="number" id="number" min="1" max="10">
+    <button onclick="calculateFactorial()">Рассчитать</button>
+    <p id="resultFact"></p>
+  </div>
+
+  <div>
+    <h1>Сумма цифр трехзначного числа</h1>
+    <input type="number" id="numberInput" placeholder="Введите трехзначное число">
+    <button onclick="calculateSum()">Рассчитать</button>
+    <p id="resultSum"></p>
+  </div>
+
+  <div>
+    <h1>Перевод двоичного числа в десятичную систему</h1>
+    <input type="text" id="binaryNumber" placeholder="Введите двоичное число">
+    <button onclick="convertToDecimalTwo()">Перевести</button>
+    <p id="resultСonv"></p>
+  </div>
+
+  <div>
+    <h1>Конвертер шестнадцатеричных чисел</h1>
+    <input type="text" id="hexNumber" placeholder="Введите шестнадцатеричное число">
+    <button onclick="convertToDecimalSix()">Перевести в десятичную систему</button>
+    <p id="result"></p>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
