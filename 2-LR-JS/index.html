@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS1</title>
+  <!-- <link rel="stylesheet" href="main.css"> -->
+  <style>
+    .bold {
+      font-weight: bold;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 1 Задание -->
+  <div>
+    <h1>Наименьшее число</h1>
+    <p>Введены значения:</p>
+    <ul>
+      <li>a=<input type="number" id="a"></li>
+      <li>b=<input type="number" id="b"></li>
+      <li>c=<input type="number" id="c"></li>
+    </ul>
+    <button onclick="findMinimum()">Найти наименьшее число</button>
+    <p id="resultFindMinimum"></p>
+  </div>
+
+  <!-- 2 Задание -->
+  <div>
+    <h1>Вычисление стороны, площади и периметра треугольника</h1>
+
+    <form id="triangleForm">
+      <label for="x1">Точка A (x1, y1):</label>
+      <input type="number" id="x1" required>
+      <input type="number" id="y1" required>
+      <br>
+
+      <label for="x2">Точка B (x2, y2):</label>
+      <input type="number" id="x2" required>
+      <input type="number" id="y2" required>
+      <br>
+
+      <label for="x3">Точка C (x3, y3):</label>
+      <input type="number" id="x3" required>
+      <input type="number" id="y3" required>
+      <br>
+
+      <button type="submit">Вычислить</button>
+    </form>
+
+    <div id="resultTriangle" style="display: none;">
+      <h2>Результаты:</h2>
+      <p>Длина стороны AB: <span id="sideAB"></span></p>
+      <p>Длина стороны BC: <span id="sideBC"></span></p>
+      <p>Длина стороны CA: <span id="sideCA"></span></p>
+      <p>Площадь треугольника: <span id="area"></span></p>
+      <p>Периметр треугольника: <span id="perimeter"></span></p>
+    </div>
+  </div>
+
+  <!-- 3 Задание -->
+  <div>
+    <h1>Вычисление выражений</h1>
+    <img src="1.png" alt=""><br>
+
+    <label>a:</label>
+    <input type="number" id="aaa"><br>
+
+    <label>b:</label>
+    <input type="number" id="bbb"><br>
+
+    <label>c:</label>
+    <input type="number" id="ccc"><br>
+
+    <label>d:</label>
+    <input type="number" id="ddd"><br>
+
+    <label>x:</label>
+    <input type="number" id="xxx"><br>
+
+    <label>y:</label>
+    <input type="number" id="yyy"><br>
+
+    <button onclick="calculateAndDisplay()">Вычислить</button>
+
+    <div id="result1"></div>
+    <div id="result2"></div>
+    <div id="result3"></div>
+    <div id="result4"></div>
+  </div>
+
+  <!-- 4 Задание -->
+  <div>
+    <h1>Список слов</h1>
+    <button onclick="getWordsList()">Ввести слова</button>
+    <div id="output"></div>
+  </div>
+
+  <!-- 5 Задание -->
+  <div>
+    <h1>Анкета</h1>
+    <button id="quest">Пройти анкету</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

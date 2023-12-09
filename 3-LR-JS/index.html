@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS1</title>
+  <!-- <link rel="stylesheet" href="main.css"> -->
+  <style>
+    .bold {
+      font-weight: bold;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 1 Задание -->
+  <div>
+    <h1>Калькулятор тригонометрических функций</h1>
+    <label for="angle">Угол (градусы):</label>
+    <input type="number" id="angle" min="0" max="90">
+
+    <label for="function">Функция:</label>
+    <select id="function">
+      <option value="sin">sin</option>
+      <option value="cos">cos</option>
+      <option value="tan">tan</option>
+      <option value="cot">cot</option>
+    </select>
+
+    <button onclick="calculate()">Вычислить</button>
+
+    <div id="resultCalculate"></div>
+  </div>
+
+  <div>
+    <h1>Анкета студента</h1>
+
+    <form id="anketaForm">
+      <label for="fio">ФИО:</label>
+      <input type="text" id="fio" required><br><br>
+
+      <label for="dob">Дата рождения:</label>
+      <input type="date" id="dob" required><br>
+
+      <label for="gender">Пол:</label>
+      <select id="gender" required>
+        <option value="Мужской">Мужской</option>
+        <option value="Женский">Женский</option>
+      </select><br><br>
+
+      <label for="faculty">Факультет:</label>
+      <input type="text" id="faculty" required><br><br>
+
+      <label for="major">Специальность:</label>
+      <input type="text" id="major" required><br><br>
+
+      <label for="course">Курс:</label>
+      <input type="number" id="course" min="1" max="6" required><br><br>
+
+      <label for="hobby">Хобби:</label>
+      <input type="text" id="hobby" required><br><br>
+
+      <label for="programmingLanguage">Язык программирования:</label>
+      <input type="text" id="programmingLanguage" required><br><br>
+
+      <label for="musicalInstrument">Музыкальный инструмент:</label>
+      <input type="text" id="musicalInstrument" required><br><br>
+
+      <label for="sports">Любимые виды спорта:</label>
+      <input type="text" id="sports" required><br><br>
+
+      <label for="favoriteColor">Любимый цвет:</label>
+      <input type="color" id="favoriteColor" required><br><br>
+
+      <button type="button" onclick="submitForm()">Отправить</button>
+    </form>
+
+    <h2 id="tableName">Таблица с анкетными данными</h2>
+    <table id="anketaTable">
+      <tr>
+        <th>ФИО</th>
+        <th>Возраст</th>
+        <th>Дата анкетирования</th>
+        <th>Пол</th>
+        <th>Факультет</th>
+        <th>Специальность</th>
+        <th>Курс</th>
+        <th>Хобби</th>
+        <th>Язык программирования</th>
+        <th>Музыкальный инструмент</th>
+        <th>Любимые виды спорта</th>
+      </tr>
+    </table>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
